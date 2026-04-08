@@ -1,7 +1,6 @@
 import Image from "next/image"
 import MoscowImage from "@/public/images/moscow.jpg"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
+import { CTAButton } from "./CTAButton"
 export function SecondSection() {
   return (
     <div className="container mx-auto max-w-7xl">
@@ -18,11 +17,7 @@ export function SecondSection() {
             Эпоха упадка, тотального контроля и медленного умирания нации. Место
             Где мечты умерли, а выживание стало единственной целью.{" "}
           </p>
-          <Button className="mt-12 w-sm py-8 text-2xl font-bold">
-            <Link href="/blog/why-russians-calm">
-              Why Russians are So Stupid
-            </Link>
-          </Button>
+          <CTAButton />
         </div>
       </div>
     </div>

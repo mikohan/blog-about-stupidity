@@ -1,7 +1,6 @@
 import Image from "next/image"
 import LAImage from "@/public/images/la.jpg"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
+import { CTAButton } from "./CTAButton"
 export function Hero() {
   return (
     <div className="container mx-auto max-w-7xl">
@@ -22,11 +21,7 @@ export function Hero() {
             возможностями и надеждой на завтра, а город стал настоящим магнитом
             для талантов со всего мира.
           </p>
-          <Button className="mt-12 w-sm py-8 text-2xl font-bold">
-            <Link href="/blog/why-russians-calm">
-              Why Russians are So Stupid
-            </Link>
-          </Button>
+          <CTAButton />
         </div>
         <div className="max-w-1/2">
           <Image src={LAImage} alt="future in LA" className="rounded-3xl" />
