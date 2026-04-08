@@ -13,9 +13,6 @@ export default function Page() {
       <div className="mt-0 md:mt-16">
         <SecondSection />
       </div>
-      <div>
-        <Footer />
-      </div>
     </div>
   )
 }

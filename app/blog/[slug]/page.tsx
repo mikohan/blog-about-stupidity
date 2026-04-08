@@ -23,7 +23,7 @@ export default async function PostPage({ params }: PageProps) {
   if (!post) notFound()
 
   return (
-    <main className="mx-auto max-w-3xl px-6 py-12">
+    <main className="mx-auto mb-8 max-w-3xl px-6 py-12">
       <header className="mb-8 border-b pb-8">
         <h1 className="text-4xl font-extrabold tracking-tight">{post.title}</h1>
         <time className="mt-2 block text-sm text-muted-foreground">

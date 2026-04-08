@@ -3,6 +3,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import "./globals.css"
 import { Navbar } from "./components/Navbar"
 import { cn } from "@/lib/utils"
+import { Footer } from "./components/Footer"
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" })
 
@@ -31,6 +32,7 @@ export default function RootLayout({
           <div className="relative flex min-h-screen flex-col">
             <Navbar />
             {children}
+            <Footer />
           </div>
         </ThemeProvider>
       </body>

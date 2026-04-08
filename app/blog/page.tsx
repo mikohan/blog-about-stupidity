@@ -6,9 +6,9 @@ export default async function BlogPage() {
   const posts = await getAllPosts()
 
   return (
-    <div className="container mx-auto max-w-7xl">
-      <div className="mt-32">
-        <h1 className="mb-12 text-3xl">Why Russian Are too Relaxed?</h1>
+    <div className="container mx-auto mb-8 max-w-7xl px-4">
+      <div className="mt-16 w-full md:w-1/2">
+        <h1 className="mb-12 text-5xl font-bold">Why People Are so Relaxed?</h1>
         {posts.map((post: PostMeta) => (
           <div className="flex flex-col gap-8" key={post.slug}>
             <Link
