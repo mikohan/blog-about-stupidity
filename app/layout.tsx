@@ -17,20 +17,21 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html
-      lang="en"
-      suppressHydrationWarning
-      className={cn(
-        "antialiased",
-        fontMono.variable,
-        "font-sans",
-        geist.variable
-      )}
-    >
-      <body>
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={cn(
+          "min-h-screen overflow-x-hidden bg-background font-sans antialiased",
+          "antialiased",
+          fontMono.variable,
+          "font-sans",
+          geist.variable
+        )}
+      >
         <ThemeProvider>
-          <Navbar />
-          {children}
+          <div className="relative flex min-h-screen flex-col">
+            <Navbar />
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>

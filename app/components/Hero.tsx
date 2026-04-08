@@ -4,8 +4,8 @@ import { CTAButton } from "./CTAButton"
 export function Hero() {
   return (
     <div className="container mx-auto max-w-7xl">
-      <div className="flex gap-16">
-        <div className="flex w-1/2 flex-col gap-8">
+      <div className="flex flex-col md:flex-row md:gap-16">
+        <div className="flex flex-col items-center justify-center gap-8 md:w-1/2 md:items-start">
           <h1 className="text-5xl font-black tracking-normal">
             Лос-Анджелес: Светлое Будущее
           </h1>
@@ -23,7 +23,7 @@ export function Hero() {
           </p>
           <CTAButton />
         </div>
-        <div className="max-w-1/2">
+        <div className="mt-16 md:mt-0 md:max-w-1/2">
           <Image src={LAImage} alt="future in LA" className="rounded-3xl" />
         </div>
       </div>
