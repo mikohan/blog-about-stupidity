@@ -5,7 +5,7 @@ import { SecondSection } from "./components/SecondSection"
 
 export default function Page() {
   return (
-    <div className="flex flex-col justify-center gap-16 px-8 md:px-0">
+    <div className="mb-16 flex flex-col justify-center gap-16 px-8 md:px-0">
       <div className="mt-16">
         <Hero />
       </div>
