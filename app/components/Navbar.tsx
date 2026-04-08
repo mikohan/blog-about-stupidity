@@ -11,7 +11,7 @@ import { ThemeToggle } from "@/app/components/ThemeToggle"
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/blog", label: "Blog" },
-  { href: "/about", label: "About" },
+  { href: "/angara-lab.us", label: "About" },
 ]
 
 export function Navbar() {
