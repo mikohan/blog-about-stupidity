@@ -45,26 +45,28 @@ export const Footer = () => {
             </p>
           </div>
 
+          <div className="flex flex-col gap-8">
+            {footerSections.map((section) => (
+              <div key={section.title}>
+                <h4 className="text-sm font-semibold tracking-wider uppercase">
+                  {section.title}
+                </h4>
+                <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+                  {section.links.map((link) => (
+                    <li key={link.label}>
+                      <Link
+                        href={link.href}
+                        className="transition-colors hover:text-primary"
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
           {/* Dynamic Sections */}
-          {footerSections.map((section) => (
-            <div key={section.title}>
-              <h4 className="text-sm font-semibold tracking-wider uppercase">
-                {section.title}
-              </h4>
-              <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-                {section.links.map((link) => (
-                  <li key={link.label}>
-                    <Link
-                      href={link.href}
-                      className="transition-colors hover:text-primary"
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
         </div>
 
         <div className="mt-12 border-t pt-8 text-center text-sm text-muted-foreground">
