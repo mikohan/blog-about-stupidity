@@ -4,6 +4,7 @@ import "./globals.css"
 import { Navbar } from "./components/Navbar"
 import { cn } from "@/lib/utils"
 import { Footer } from "./components/Footer"
+import { GoogleTagManager } from "@next/third-parties/google"
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" })
 
@@ -19,6 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <GoogleTagManager gtmId="G-7F6P5QPRYN" />
       <body
         className={cn(
           "min-h-screen overflow-x-hidden bg-background font-sans antialiased",
