@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <GoogleTagManager gtmId="G-7F6P5QPRYN" />
+      <GoogleTagManager gtmId="GTM-NCCCNHC" />
       <body
         className={cn(
           "min-h-screen overflow-x-hidden bg-background font-sans antialiased",
